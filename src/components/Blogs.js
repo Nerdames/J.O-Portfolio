@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import BlogCard from "./Card";
-import "./Blogs.css";
+import Card from "./Card"; // previously BlogCard
+import "./Blogs.css"; // unified styles for blog/design/etc.
 
 const blogData = Array.from({ length: 18 }, (_, index) => ({
   id: index + 1,
   title: `Blog Post ${index + 1}`,
-  description: "This is a short summary of the blog post. It highlights key points of the article to draw readers in.",
+  description:
+    "This is a short summary of the blog post. It highlights key points of the article to draw readers in.",
   image: `https://picsum.photos/300/200?random=${index + 1}`,
 }));
 
@@ -21,15 +22,15 @@ function Blogs() {
   };
 
   return (
-    <section id="blogs-post">
-      <header className="blog-header">
+    <section className="section" id="blogs-post">
+      <header className="section-header">
         <h2>Blogs</h2>
         <a href="/all-blogs" className="view-all-btn">View All</a>
       </header>
 
-      <div className="blog-list">
+      <div className="list">
         {blogData.slice(0, visibleCount).map((blog) => (
-          <BlogCard
+          <Card
             key={blog.id}
             title={blog.title}
             description={blog.description}

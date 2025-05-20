@@ -22,10 +22,5 @@ a{
     color: var(--text);
 }
 
-section {
-  padding-top: 90px; /* at least the height of your header */
-}
-
-
 
 

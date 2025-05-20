@@ -1,16 +1,17 @@
+// components/Card.js
 import React from "react";
-import "./Blogs.css";
+import "./Card.css";
 
-function BlogCard({ title, description, image }) {
+function Card({ title, image, description }) {
   return (
-    <div className="blog-card">
+    <div className="card">
       <img src={image} alt={title} />
-      <div className="blog-content">
+      <div className="card-content">
         <h3>{title}</h3>
-        <p>{description}</p>
+        {description && <p>{description}</p>}
       </div>
     </div>
   );
 }
 
-export default BlogCard;
+export default Card;
