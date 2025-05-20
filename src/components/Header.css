@@ -1,0 +1,28 @@
+/* Base header */
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 20px;
+  background-color: var(--overlay-bg);
+  backdrop-filter: blur(8px);
+  border-radius: 0 0 var(--regular-border) var(--regular-border);
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+/* When scrolling down — hide header */
+.header.hide {
+  transform: translateY(-100%);
+}
+
+/* When scrolling up — show header */
+.header.show {
+  transform: translateY(0);
+}
