@@ -95,3 +95,23 @@
 .intro small{
     font-weight: 500;
 }
+
+@media (max-width: 600px) {
+  #intro {
+    left: 20px;
+  }
+
+  #intro h4 {
+    font-size: 12px;
+  }
+
+  #intro h3 {
+    font-size: 16px;
+  }
+
+  #intro p,
+  #intro small {
+    font-size: 14px;
+    font-weight: 300;
+  }
+}

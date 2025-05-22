@@ -101,7 +101,7 @@
   fill: var(--background-1);
 }
 
-/* Responsive */
+/* Responsive adjustments for smaller screens */
 @media (max-width: 900px) {
   .about {
     flex-direction: column;
@@ -119,11 +119,31 @@
     height: 180px;
   }
 
+  .user-image img {
+    position: static;
+    transform: none;
+    width: 100%;
+    height: auto;
+  }
+
   .skill h2 {
     font-size: 28px;
   }
 
   .skill ul li {
     font-size: 16px;
+  }
+
+  /* Optional: reduce about-header font-size on smaller screens */
+  .about-header {
+    font-size: 24px;
+    padding-left: 10px;
+  }
+
+  /* Adjust summary intro padding and alignment */
+  .summary-intro {
+    padding: 0 10px;
+    align-items: center;
+    justify-content: center;
   }
 }

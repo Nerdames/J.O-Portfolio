@@ -5,7 +5,7 @@ import './Intro.css';
 
 function Intro() {
   return (
-    <div className="intro">
+    <div className="intro" id="intro">
       <h4>Hello, <em id="greetings">Welcome</em></h4>
       <h3>I'm James Orjiene</h3>
       <p>A UI/UX Designer and Web Developer</p>
