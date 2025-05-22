@@ -1,4 +1,3 @@
-// components/Navbar.js
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 
@@ -9,7 +8,7 @@ const navItems = [
   { id: "about-page", label: "About" },
 ];
 
-function Navbar({ scope }) {
+function Navbar() {
   const [activeSection, setActiveSection] = useState("home-page");
 
   const handleClick = (e, id) => {
@@ -40,7 +39,7 @@ function Navbar({ scope }) {
 
   return (
     <nav>
-      <ul className={`pages ${scope === "sidebar" ? "sidebar-pages" : ""}`}>
+      <ul className="pages">
         {navItems.map(({ id, label }) => (
           <li key={id}>
             <a
