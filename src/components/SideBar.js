@@ -83,9 +83,9 @@ function SideBar({ isVisible, hideSidebar }) {
         </li>
         <li>
           <a
-            href="#designs"
+            href="#designs-post"
             onClick={handleLinkClick}
-            className={activeSection === 'designs' ? 'active' : ''}
+            className={activeSection === 'designs-post' ? 'active' : ''}
           >
             Designs
           </a>
