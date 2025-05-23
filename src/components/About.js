@@ -1,6 +1,5 @@
 import React from "react";
 import Intro from "./Intro";
-import Socials from "./Socials";
 import './About.css';
 import userImage from "../assets/User 1.jpg"; // adjust if needed
 
